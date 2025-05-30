@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Subscribe - Junior Scholars in Quantitative Conflict Workshop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.4;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      font-size: 15px;
+    }
+
+    nav a {
+      margin: 5px 15px;
+      text-decoration: none;
+      color: #808080;
+      padding-bottom: 5px;
+      font-weight: normal;
+      font-size: 18px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 2px solid #3B739E;
+      color: #3B739E;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 50px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .right {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border: 1px solid #ccc;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-bottom: 2px solid #000;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      font-size: 16px;
+      border: 1px solid #000;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f0f0f0;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      margin-top: 40px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        font-size: 14px;
+      }
+
+      nav a {
+        margin: 5px 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .container {
+        padding: 0 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="organizers.html">Organizers</a>
+    <a href="proposal.html">Proposal Submissions</a>
+    <a href="schedule.html">2024 Fall - 2025 Spring Schedule</a>
+    <a href="subscribe.html" class="active">Subscribe</a>
+  </nav>
+
+  <div class="container">
+    <div class="right">
+      <h1>Join our mailing list</h1>
+
+      <!-- Formspree form -->
+      <form action="https://formspree.io/f/mwpbebzb" method="POST">
+        <label for="email">Email *</label>
+        <input type="email" name="email" id="email" required>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="consent" required>
+          I want to subscribe to your mailing list.
+        </label>
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Junior Scholars in Quantitative Conflict Workshop
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Organizers - Junior Scholars in Quantitative Conflict Workshop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.4;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      font-size: 15px;
+    }
+
+    nav a {
+      margin: 5px 15px;
+      text-decoration: none;
+      color: #808080;
+      padding-bottom: 5px;
+      font-weight: normal;
+      font-size: 18px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 2px solid #3B739E;
+      color: #3B739E;
+      font-weight: bold;
+    }
+
+    .organizer-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    .organizer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .organizer.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .organizer img {
+      width: 180px;
+      height: 220px;
+      object-fit: cover;
+      border: 0px solid #ccc;
+    }
+
+    .organizer-info {
+      max-width: 500px;
+    }
+
+    .organizer-info h2 {
+      font-size: 22px;
+      margin: 0 0 2px 0;
+      font-weight: bold;
+    }
+
+    .organizer-info p {
+      margin: 1px 0;
+    }
+
+    .organizer-info a {
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 2px;
+    }
+
+    .organizer-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      margin-top: 40px;
+      color: #999;
+    }
+
+    @media (max-width: 700px) {
+      .organizer,
+      .organizer.reverse {
+        flex-direction: column !important;
+        text-align: center;
+      }
+
+      .organizer-info {
+        max-width: 100%;
+      }
+
+      nav {
+        font-size: 14px;
+      }
+
+      nav a {
+        margin: 5px 10px;
+      }
+
+      .organizer img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="organizers.html" class="active">Organizers</a>
+    <a href="proposal.html">Proposal Submissions</a>
+    <a href="schedule.html">2024 Fall - 2025 Spring Schedule</a>
+    <a href="subscribe.html">Subscribe</a>
+  </nav>
+
+  <div class="organizer-container">
+
+    <!-- Organizer 1 -->
+    <div class="organizer">
+      <img src="britt.jpg" alt="Britt Koehnlein">
+      <div class="organizer-info">
+        <h2>Britt Koehnlein</h2>
+        <p>Ph.D. Candidate in Political Science, Indiana University - Bloomington</p>
+        <a href="https://brittkoehnlein.owlstown.net/" target="_blank">Personal Website</a>
+      </div>
+    </div>
+
+    <!-- Organizer 2 -->
+    <div class="organizer reverse">
+      <img src="ilayda.jpg" alt="Ilayda Onder">
+      <div class="organizer-info">
+        <h2>Ilayda B. Onder</h2>
+        <p>Assistant Professor of Political Science, Texas A&M University</p>
+        <a href="https://www.ilaydaonder.com/" target="_blank">Personal Website</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Junior Scholars in Quantitative Conflict Workshop
+  </footer>
+
+</body>
+</html>
