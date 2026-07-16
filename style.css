@@ -1,0 +1,441 @@
+/* Shared stylesheet for the Junior Scholars in Quantitative Conflict
+   Workshop site. All pages link this file; page-specific variations use
+   modifier classes (.container.home on the About page, .right.narrow on
+   the Subscribe page). */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+nav a {
+  margin: 5px 15px;
+  text-decoration: none;
+  color: #808080;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 2px solid #3B739E;
+  color: #3B739E;
+  font-weight: bold;
+  opacity: 1;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: #3B739E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+/* ---------- Page layout ---------- */
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Two-column layout on the About page */
+.container.home {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.right {
+  max-width: 800px;
+  width: 100%;
+}
+
+.right.narrow {
+  max-width: 600px;
+}
+
+.container.home .right {
+  flex: 1;
+  width: auto;
+}
+
+.left {
+  width: 300px;
+  text-align: center;
+  padding-right: 40px;
+  margin-top: 40px;
+}
+
+/* ---------- Headings and text ---------- */
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.container.home .right h1:last-of-type {
+  margin-top: 40px;
+}
+
+h1.name {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  margin: -5px 0 30px 0;
+}
+
+.right h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.right p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.titleblock {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.icons {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.icons a {
+  margin: 0 6px;
+  text-decoration: none;
+  color: #000;
+}
+
+.icons a:hover {
+  color: #3B739E;
+}
+
+/* ---------- Announcements ---------- */
+
+.announcement {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0;
+  color: #000000; /* force black text; only links are blue */
+}
+
+.old-content {
+  display: none;
+}
+
+/* ---------- Schedule and archive sessions ---------- */
+
+details.season {
+  margin-bottom: 25px;
+}
+
+details.season summary {
+  font-size: 24px;
+  font-weight: 800;
+  color: #3B739E;
+  cursor: pointer;
+  padding: 10px 0;
+  user-select: none;
+}
+
+details.season summary:hover {
+  opacity: 0.7;
+}
+
+details.season .session-count {
+  font-size: 15px;
+  font-weight: normal;
+  color: #808080;
+}
+
+.session {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  border-left: 4px solid #3B739E; /* match menu highlight */
+  border-radius: 6px;
+  padding: 18px 20px;
+  margin: 0 0 14px 0;
+  transition: box-shadow 0.15s ease;
+}
+
+.session:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.date {
+  width: 30%;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+
+.info {
+  width: 65%;
+  font-size: 16px;
+  color: #000000;
+}
+
+.info h2 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.info em {
+  font-style: italic;
+  display: block;
+  margin: 5px 0;
+}
+
+.info p {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.format {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #3B739E;
+  margin: 0 0 6px 0;
+}
+
+.discussant {
+  color: #555;
+}
+
+/* ---------- Organizers ---------- */
+
+.organizer-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.organizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.organizer.reverse {
+  flex-direction: row-reverse;
+}
+
+.organizer img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border: 0px solid #ccc;
+}
+
+.organizer-info {
+  max-width: 500px;
+}
+
+.organizer-info h2 {
+  font-size: 22px;
+  margin: 0 0 2px 0;
+  font-weight: bold;
+}
+
+.organizer-info p {
+  margin: 1px 0;
+}
+
+.organizer-info a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.organizer-info a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* ---------- Subscribe form ---------- */
+
+form {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px solid #000;
+  background-color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+  font-size: 11px;
+  margin-top: 40px;
+  color: #999;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+  nav {
+    font-size: 14px;
+  }
+
+  nav a {
+    margin: 5px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h1.name {
+    font-size: 28px;
+  }
+
+  .right p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  details.season summary {
+    font-size: 20px;
+  }
+
+  .session {
+    flex-direction: column;
+  }
+
+  .date,
+  .info {
+    width: 100%;
+  }
+
+  .date {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .organizer,
+  .organizer.reverse {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .organizer-info {
+    max-width: 100%;
+  }
+
+  .organizer img {
+    width: 150px;
+    height: 200px;
+  }
+}
