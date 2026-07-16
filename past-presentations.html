@@ -61,27 +61,38 @@
       margin-bottom: 30px;
     }
 
-    .season-title {
+    details.season {
+      margin-bottom: 25px;
+    }
+
+    details.season summary {
       font-size: 24px;
       font-weight: 800;
       color: #3B739E;
-      margin: 50px 0 15px 0;
+      cursor: pointer;
+      padding: 10px 0;
+      user-select: none;
     }
 
-    .season-title:first-of-type {
-      margin-top: 0;
+    details.season summary:hover {
+      opacity: 0.7;
+    }
+
+    details.season .session-count {
+      font-size: 15px;
+      font-weight: normal;
+      color: #808080;
     }
 
     .session {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      border-top: 4px solid #3B739E; /* match menu highlight */
-      padding: 20px 0;
-    }
-
-    .session:last-child {
-      border-bottom: 4px solid #3B739E; /* match menu highlight */
+      background-color: #f8f9fa;
+      border-left: 4px solid #3B739E; /* match menu highlight */
+      border-radius: 6px;
+      padding: 18px 20px;
+      margin: 0 0 14px 0;
     }
 
     .date {
@@ -160,7 +171,7 @@
         font-size: 24px;
       }
 
-      .season-title {
+      details.season summary {
         font-size: 20px;
       }
 
@@ -195,7 +206,8 @@
     <div class="right">
       <h1>Past Presentations</h1>
 
-      <h2 class="season-title">Spring 2026</h2>
+      <details class="season" open>
+      <summary>Spring 2026 <span class="session-count">(8 sessions)</span></summary>
 
       <div class="session">
         <div class="date">January 30, 2026</div>
@@ -283,7 +295,10 @@
         </div>
       </div>
 
-      <h2 class="season-title">Fall 2025</h2>
+      </details>
+
+      <details class="season">
+      <summary>Fall 2025 <span class="session-count">(9 sessions)</span></summary>
 
       <div class="session">
         <div class="date">September 4, 2025</div>
@@ -382,7 +397,10 @@
         </div>
       </div>
 
-      <h2 class="season-title">Spring 2025</h2>
+      </details>
+
+      <details class="season">
+      <summary>Spring 2025 <span class="session-count">(12 sessions)</span></summary>
 
       <div class="session">
         <div class="date">January 9, 2025</div>
@@ -533,6 +551,7 @@
           <em>"When Is the Future? How Perspectives of the Future in Peace Agreements Explained Their Durability"</em>
         </div>
       </div>
+      </details>
 
     </div>
   </div>
